@@ -9,7 +9,7 @@ for (let i = 0; i < inputWater.length; i++) {
   let curr = Number(inputWater[i]);
   if (curr === N) {
     console.log("Yes");
-    return;
+    break;
   } else if (curr < N) {
     smallNum = true;
   } else {
@@ -18,8 +18,8 @@ for (let i = 0; i < inputWater.length; i++) {
 
   if (bigNum === true && smallNum === true) {
     console.log("Yes");
-    return;
+    break;
   }
 }
 
-console.log("No");
+if (!(bigNum === true && smallNum === true)) console.log("No");
