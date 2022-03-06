@@ -1,3 +1,5 @@
+// node problem1.js -m "n N" "A1 A2 ... An" で実行
+
 let n = Number(process.argv[3].split(" ")[0]);
 let N = Number(process.argv[3].split(" ")[1]);
 let inputWater = process.argv[4].split(" ");
